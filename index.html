@@ -6,161 +6,132 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Caveat&family=Lobster&family=Lora&family=Noto+Sans&family=Open+Sans&family=Sacramento&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #ededf7;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Open Sans', sans-serif;
-        }
-        #title{
-            margin: 1%;
-        }
-        #shopping_cart {
-            margin-left: 1%;
-            background-color: white;
-            border-collapse: collapse;
-            width: 75%;
-            display: inline-block;
-            border-radius: 5px;
-        }
-        #shopping_cart_heading{
-           border-bottom: 10px solid #ededf7;
-           height: 40px;
-        }
-        #shop_name{
-            border-bottom: 20px solid white;
-        }
-        .shopping_cart_info{
-            border-bottom: 70px solid white;
-        }
-        .product_name{
-            width: 30%;
-            padding-right: 5%;
-        }
-        .product_price{
-            
-        }
-        .input_checkbox{
-        }
-        s{
-            color: gray;
-            font-size: small;
-        }
-        .total_price{
-            color: red;
-        }
-        .input_number input[type="number"] {
-            width: 60px;
-        }
-
-        #shipping_address {
-            background-color: white;
-            display: inline-block; 
-            vertical-align: top;
-            margin-left: 5px;
-            margin-right: 1%;
-            width: 22.25%;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h3 id="title">GIỎ HÀNG</h3>
-        <table id="shopping_cart">
-            <tr id="shopping_cart_heading">
-                <td><input type="checkbox"></td>
-                <td>Tất cả (13 sản phẩm)</td>
-                <td></td>
-                <td>Đơn giá</td>
-                <td>Số lượng</td>
-                <td>Thành tiền</td>
-                <td>
-                    <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
-                </td>
-            </tr>
-            <tr id="shop_name">
-                <td><input type="checkbox"></td>
-                <td>
-                    <img src="./public/img/store-solid.svg" alt="store icon" width="15px">
-                    <b>Tiki Trading</b>
-                    <img src="./public/img/next.png" alt="" width="15px">
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="shopping_cart_info">
-                <td class="input_checkbox"><input type="checkbox"></td>
-                <td class="product_img">
-                    <img src="./public/img/oppoA54-den.jpg" alt="Oppo A54 Image" width="70px">
-                </td>
-                <td class="product_name">Điện thoại Oppo A54 (4GB/128GB) - Đen - Hàng Chính Hãng</td>
-                <td class="product_price">3.190.000 <ins>đ</ins> <s>5.990.000 <ins>đ</ins></s></td>
-                <td class="input_number"><input type="number"></td>
-                <td class="total_price">3.190.000 <ins>đ</ins></td>
-                <td>
-                    <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
-                </td>
-            </tr>
-            <tr class="shopping_cart_info">
-                <td class="input_checkbox"><input type="checkbox"></td>
-                <td class="product_img">
-                    <img src="./public/img/oppoA54-xanhduong.jpg" alt="Oppo A54 Image" width="70px">
-                </td>
-                <td class="product_name">Điện thoại Oppo A54 (4GB/128GB) - Xanh dương - Hàng Chính Hãng</td>
-                <td class="product_price">3.190.000 <ins>đ</ins> <s>3.990.000 <ins>đ</ins></s></td>
-                <td class="input_number"><input type="number"></td>
-                <td class="total_price">3.190.000 <ins>đ</ins></td>
-                <td>
-                    <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
-                </td>
-            </tr>
-            <tr class="shopping_cart_info">
-                <td class="input_checkbox"><input type="checkbox"></td>
-                <td class="product_img">
-                    <img src="./public/img/oppoA54-den.jpg" alt="Oppo A54 Image" width="70px">
-                </td>
-                <td class="product_name">Điện thoại Oppo A54 (4GB/128GB) - Đen - Hàng Chính Hãng</td>
-                <td class="product_price">3.190.000 <ins>đ</ins> <s>5.990.000 <ins>đ</ins></s></td>
-                <td class="input_number"><input type="number"></td>
-                <td class="total_price">3.190.000 <ins>đ</ins></td>
-                <td>
-                    <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
-                </td>
-            </tr>
-            <tr class="shopping_cart_info">
-                <td class="input_checkbox"><input type="checkbox"></td>
-                <td class="product_img">
-                    <img src="./public/img/oppoA54-xanhduong.jpg" alt="Oppo A54 Image" width="70px">
-                </td>
-                <td class="product_name">Điện thoại Oppo A54 (4GB/128GB) - Xanh dương - Hàng Chính Hãng</td>
-                <td class="product_price">3.190.000 <ins>đ</ins> <s>3.990.000 <ins>đ</ins></s></td>
-                <td class="input_number"><input type="number"></td>
-                <td class="total_price">3.190.000 <ins>đ</ins></td>
-                <td>
-                    <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
-                </td>
-            </tr>
-        </table>
-
-        <table id="shipping_address">
-            <tr>
-                <td>Giao tới <span style="float: right; color: blue">Thay đổi</span></td>
-            </tr>
-            <tr>
-                <td >
-                    <b>Student name</b><br>
-                    <b>Trường ĐH Công nghệ thông tin KP6, Linh Trung, TP.Thủ Đức</b>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <h3 id="title">GIỎ HÀNG</h3>
+        <div class="table-container">
+            <table id="shopping_cart">
+                <thead id="shopping_cart_heading">
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Tất cả (13 sản phẩm)</th>
+                        <th></th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th><img src="./public/img/trash-solid.svg" alt="trash icon" width="15px"></th>
+                    </tr>
+                </thead>
+                <tbody id="shopping_cart_body">
+                    <!-- Rows of stores and products -->
+                    <tr class="shop_name">
+                        <td style="padding-top: 17px;"><input type="checkbox"></td>
+                        <td style="padding-top: 17px;">
+                            <img src="./public/img/store-solid.svg" alt="store icon" width="15px">
+                            <b>Tiki Trading</b>
+                            <img src="./public/img/next.png" alt="" width="15px">
+                        </td>
+                        <td style="padding-top: 17px;"></td>
+                        <td style="padding-top: 17px;"></td>
+                        <td style="padding-top: 17px;"></td>
+                        <td style="padding-top: 17px;"></td>
+                        <td style="padding-top: 17px;"></td>
+                    </tr>
+                    <tr class="shopping_cart_info">
+                        <td class="input_checkbox"><input type="checkbox"></td>
+                        <td class="product_img">
+                            <img src="./public/img/oppoA54-den.jpg" alt="Oppo A54 Image" width="80px">
+                        </td>
+                        <td class="product_name">Điện thoại Oppo A54 (4GB/128GB) - Đen - Hàng Chính Hãng
+                            <p><img src="./public/img/delivery-truck_2769339.png" alt="" width="17px"> Giao thứ 5, 21/09</p>
+                        </td>
+                        <td class="product_price"><b>3.190.000 <ins>đ</ins></b> <s>5.990.000 <ins>đ</ins></s></td>
+                        <td class="input_number"><input type="number"></td>
+                        <td class="total_price"><b>3.190.000 <ins>đ</ins></b></td>
+                        <td>
+                            <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
+                        </td>
+                    </tr>
+                    <tr class="shopping_cart_info">
+                        <td class="input_checkbox"><input type="checkbox"></td>
+                        <td class="product_img">
+                            <img src="./public/img/oppoA54-xanhduong.jpg" alt="Oppo A54 Image" width="80px">
+                        </td>
+                        <td class="product_name">Điện thoại Oppo A54 (4GB/128GB) - Xanh dương - Hàng Chính Hãng
+                            <p><img src="./public/img/delivery-truck_2769339.png" alt="" width="17px"> Giao thứ 5, 21/09</p>
+                        </td>
+                        <td class="product_price"><b>3.190.000 <ins>đ</ins></b> <s>3.990.000 <ins>đ</ins></s></td>
+                        <td class="input_number"><input type="number"></td>
+                        <td class="total_price"><b>3.190.000 <ins>đ</ins></b></td>
+                        <td>
+                            <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
+                        </td>
+                    </tr>
+                    <tr class="shopping_cart_info">
+                        <td class="input_checkbox"><input type="checkbox"></td>
+                        <td class="product_img">
+                            <img src="./public/img/oppoA54-den.jpg" alt="Oppo A54 Image" width="80px">
+                        </td>
+                        <td class="product_name">Điện thoại Oppo A54 (4GB/128GB) - Đen - Hàng Chính Hãng
+                            <p><img src="./public/img/delivery-truck_2769339.png" alt="" width="17px"> Giao thứ 5, 21/09</p>
+                        </td>
+                        <td class="product_price"><b>3.190.000 <ins>đ</ins></b> <s>5.990.000 <ins>đ</ins></s></td>
+                        <td class="input_number"><input type="number"></td>
+                        <td class="total_price"><b>3.190.000 <ins>đ</ins></b></td>
+                        <td>
+                            <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
+                        </td>
+                    </tr>
+                    <tr class="shopping_cart_info">
+                        <td class="input_checkbox"><input type="checkbox"></td>
+                        <td class="product_img">
+                            <img src="./public/img/oppoA54-xanhduong.jpg" alt="Oppo A54 Image" width="80px">
+                        </td>
+                        <td class="product_name">Điện thoại Oppo A54 (4GB/128GB) - Xanh dương - Hàng Chính Hãng
+                            <p><img src="./public/img/delivery-truck_2769339.png" alt="" width="17px"> Giao thứ 5, 21/09</p>
+                        </td>
+                        <td class="product_price"><b>3.190.000 <ins>đ</ins></b> <s>3.990.000 <ins>đ</ins></s></td>
+                        <td class="input_number"><input type="number"></td>
+                        <td class="total_price"><b>3.190.000 <ins>đ</ins></b></td>
+                        <td>
+                            <img src="./public/img/trash-solid.svg" alt="trash icon" width="15px">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+    
+            <table id="shipping_address">
+                <tr>
+                    <td style="padding-bottom: 10px; padding-left: 10px; padding-right: 10px">Giao tới <span style="float: right; color: blue">Thay đổi</span></td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 40px; padding-left: 10px; padding-right: 10px">
+                        <b>Student name</b><br>
+                        <b>Trường ĐH Công nghệ thông tin KP6, Linh Trung, Tp. Thủ Đức</b>
+                    </td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="padding-top: 5px; padding-left: 10px; padding-right: 10px; border-top: 10px solid #ededf7"><b>Tiki khuyến mãi</b>
+                        <span style="float: right;">Có thể chọn 2 <img src="./public/img/information.png" alt="info icon" width="15px"></span>
+                        <br>
+                        <span style="float: left; padding-top: 30px; padding-bottom: 15px"><img src="./public/img/icons8-coupon-60.png" alt="" width="15px"> Chọn hoặc nhập khuyễn mãi khác</span>
+                    </td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="padding-top: 10px; padding-left: 10px; padding-right: 10px; border-top: 10px solid #ededf7; color: grey; border-bottom: 3px solid #ededf7">Tạm tính
+                        <span style="float: right; color: black; padding-bottom: 27px;">534.000đ</span>
+                    </td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="padding-top: 10px; padding-left: 10px; padding-right: 10px; color: grey; border-bottom: 3px solid #ededf7">Tổng tiền
+                        <span style="float: right; color: black; font-size: 22px; color:red"><b>534.000 <ins>đ</ins></b></span>
+                        <p style="text-align:right">(Đã bao gồm VAT nếu có)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
 </body>
 </html>
